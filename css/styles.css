@@ -15,10 +15,10 @@ html {
 }
 
 body {
+  color: var(--color-body);
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: var(--color-body);
 }
 
 h1,
@@ -70,9 +70,9 @@ a {
 
 .link-arrow {
   color: var(--color-primary);
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -88,5 +88,38 @@ a {
 @media screen and (min-width: 576px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* BADGES: */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-body);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
