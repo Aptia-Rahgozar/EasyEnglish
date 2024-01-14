@@ -172,6 +172,10 @@ a {
   fill: var(--color-body);
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   align-items: center;
   background: var(--color-accent);
@@ -180,6 +184,10 @@ a {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+.icon-container--accent {
+  background: var(--color-secondary);
 }
 
 /* BUTTONS: */
@@ -444,5 +452,31 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* TESTIMONIALS: */
+.testimonial {
+  padding: 3rem;
+  margin: 5rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote {
+    margin: 6rem;
   }
 }
