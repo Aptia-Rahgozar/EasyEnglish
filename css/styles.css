@@ -623,6 +623,7 @@ a:hover {
 .collapsible__chevron {
   transform: rotate(-90deg);
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .collapsible__content {
