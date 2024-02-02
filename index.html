@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Learn English, master the grammar and prepare yourself for international exams."
+    />
+    <title>Easy English</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,9 +16,631 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__logo" href="/">
+          <img
+            class="icon"
+            src="./images/logo.svg"
+            alt="EnglishHubOnline logo"
+          />
+          <span>Easy English</span>
+        </a>
+        <svg
+          class="icon icon--white nav__toggler bi bi-list"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#">Speaking</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Writing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Reading</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Listening</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero block block--dark block--skewed-left">
+      <div class="container grid grid--cols-2">
+        <header
+          class="block__header hero__content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h1 class="block__heading">Learn English Easily</h1>
+          <p class="hero__tagline">
+            Practice your skills easilly as you move on!
+          </p>
+          <a href="" class="btn btn--primary btn--stretched">Get Started</a>
+        </header>
+        <img
+          class="hero__image"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          src="/images/005.svg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section
+      class="block container domain-block"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <header class="block__header">
+        <h2>Grammar Reference</h2>
+        <p>Search for the grammatical point that you're looking for.</p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Search keyword ..." />
+        <button class="btn btn--primary">
+          <svg
+            class="icon bi bi-search"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+          Search
+        </button>
+      </div>
+      <ul class="list domain-block__prices">
+        <li>
+          <span class="badge badge--secondary"><a href="#">Tenses</a></span>
+        </li>
+        <li><a href="#">Prepositions</a></li>
+        <li><a href="#">Infinitives</a></li>
+        <li><a href="#">Gerunds</a></li>
+        <li><a href="#">Conditionals</a></li>
+        <li><a href="#">Inversion</a></li>
+      </ul>
+    </section>
+
+    <section class="block container plans-block">
+      <div class="grid grid--cols-3">
+        <div class="plan" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Basic</h3>
+              <span class="plan__price">Free</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Access to Grammar Reference</li>
+                <li class="list__item">Access to Skills</li>
+                <li class="list__item">Access to All Exercises</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Start Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="plan plan--popular"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Premium</h3>
+              <span class="plan__price">$5</span>
+              <span class="plan__billing-cycle">/month</span>
+              <p class="badge badge--primary badge--small">10% Off</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Access to Grammar Reference</li>
+                <li class="list__item">Access to Skills</li>
+                <li class="list__item">Access to All Exercises</li>
+                <li class="list__item">Access to Exams</li>
+              </ul>
+              <button class="btn btn--outline-two btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Gold</h3>
+              <span class="plan__price">$9</span>
+              <span class="plan__billing-cycle">/month</span>
+              <p class="badge badge--primary badge--small">10% Off</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Access to Grammar Reference</li>
+                <li class="list__item">Access to Skills</li>
+                <li class="list__item">Access to All Exercises</li>
+                <li class="list__item">Access to Exams</li>
+                <li class="list__item">Keep Track of Your Progress</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container">
+      <header class="block__header">
+        <h2>Start Your English Journey With Us Today</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          blanditiis.
+        </p>
+      </header>
+      <article class="grid grid--cols-2 feature">
+        <div
+          class="feature__content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <span class="icon-container">
+            <svg
+              class="icon icon--primary bi bi-balloon-heart"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+              />
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
+            laudantium possimus! Cum repellat perspiciatis eum molestiae
+            voluptatem velit aut non.
+          </p>
+          <a href="#" class="link-arrow">Read More...</a>
+        </div>
+        <img
+          class="feature__image"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          src="images/003.svg"
+          alt=""
+        />
+      </article>
+
+      <article class="grid grid--cols-2 feature">
+        <div
+          class="feature__content"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <span class="icon-container">
+            <svg
+              class="icon icon--primary bi bi-bank"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"
+              />
+            </svg>
+          </span>
+          <h3 class="feature__heading">Experience the Culture</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
+            laudantium possimus! Cum repellat perspiciatis eum molestiae
+            voluptatem velit aut non.
+          </p>
+          <a href="#" class="link-arrow">Read More...</a>
+        </div>
+        <img
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          src="/images/004.svg"
+          alt=""
+        />
+      </article>
+
+      <article class="grid grid--cols-2 feature">
+        <div
+          class="feature__content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <span class="icon-container">
+            <svg
+              class="icon icon--primary bi bi-mortarboard-fill"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"
+              />
+              <path
+                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"
+              />
+            </svg>
+          </span>
+          <h3 class="feature__heading">Prepare Yourself for Exams</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
+            laudantium possimus! Cum repellat perspiciatis eum molestiae
+            voluptatem velit aut non.
+          </p>
+          <a href="#" class="link-arrow">Read More...</a>
+        </div>
+        <img
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          src="images/002.svg"
+          alt=""
+        />
+      </article>
+    </section>
+
+    <section class="block block--dark block--skewed-right showcase-block">
+      <header class="block__header">
+        <h2>Become a member of Easy English Family</h2>
+      </header>
+      <div class="container grid grid--cols-2">
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          src="images/001.svg"
+          alt=""
+          class="showcase-block__image"
+        />
+        <ul class="list" data-aos="fade-up" data-aos-duration="1000">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg
+                  class="icon bi bi-tags-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+                  />
+                  <path
+                    d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z"
+                  />
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">
+                  Keep Track of Your Progress as You Move Forward
+                </h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, iusto accusamus quos tenetur doloremque vero qui
+                  adipisci. Quod, libero numquam.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg
+                  class="icon bi bi-speedometer"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2M3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.39.39 0 0 0-.029-.518z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.95 11.95 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0"
+                  />
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Have access to all the exercises</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, iusto accusamus quos tenetur doloremque vero qui
+                  adipisci. Quod, libero numquam.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg
+                  class="icon bi bi-bell-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                  />
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Get notified of the latest updates</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, iusto accusamus quos tenetur doloremque vero qui
+                  adipisci. Quod, libero numquam.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section
+      class="testimonial-block"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
+      <header class="block__header">
+        <h2>What our Users are Saying</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+          veniam.
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--cols-2">
+            <div class="testimonial__image">
+              <img src="images/testimonial.jpg" alt="a happy, smiling user" />
+              <span class="icon-container icon-container--accent">
+                <svg
+                  class="icon icon--white bi bi-quote"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                explicabo maxime, numquam molestiae delectus tempora deleniti
+                necessitatibus ut dolorem nemo?
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-dash-lg quote__line"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"
+                      />
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Jane Doe</h3>
+                    <p class="quote__author-title">English Teacher</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="callout callout--primary">
+        <div class="grid grid--cols-2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Blanditiis et libero quae vitae voluptates consectetur culpa magni
+              error ullam dolor.
+            </p>
+          </div>
+          <a href="#" class="btn btn--primary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">About Us</h2>
+            <span class="icon-container icon-container--accent">
+              <svg
+                class="icon icon--white collapsible__chevron bi bi-chevron-double-down"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Introduction</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Skills</h2>
+            <span class="icon-container icon-container--accent">
+              <svg
+                class="icon icon--white collapsible__chevron bi bi-chevron-double-down"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Speaking</a></li>
+              <li><a href="#">Writing</a></li>
+              <li><a href="#">Reading</a></li>
+              <li><a href="#">Listening</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Exams</h2>
+            <span class="icon-container icon-container--accent">
+              <svg
+                class="icon icon--white collapsible__chevron bi bi-chevron-double-down"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">IELTS</a></li>
+              <li><a href="#">TOEFL</a></li>
+              <li><a href="#">ESOL Examinations</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Exercises</h2>
+            <span class="icon-container icon-container--accent">
+              <svg
+                class="icon icon--white collapsible__chevron bi bi-chevron-double-down"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Grammar</a></li>
+              <li><a href="#">Vocabulary</a></li>
+              <li><a href="#">Skills</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <a class="nav__logo" href="/">  
+            <img
+              class="icon"
+              src="./images/logo.svg"
+              alt="EnglishHubOnline logo"
+            />
+            <span>Easy English</span>
+          </a>
+          <p class="footer__copyright">Copyright @ 2024</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
